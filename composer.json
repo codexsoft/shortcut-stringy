@@ -1,0 +1,36 @@
+{
+    "name": "codexsoft/shortcut-stringy",
+    "license": "MIT",
+    "description": "Just a shortcut for instantiating Stringy\\Stringy",
+    "authors": [
+        {
+            "name": "Dmitriy V Kozubskiy",
+            "email": "kozubsky@inbox.ru",
+            "homepage": "http://codexsoft.ru/",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/codexsoft/shortcut-stringy/issues",
+        "source": "https://github.com/codexsoft/shortcut-stringy"
+    },
+    "require": {
+        "php": "^7.2.0",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-master",
+        "voku/stringy": "^6.0"
+    },
+    "autoload": {
+        "files": ["functions-autoload.php"],
+        "psr-4": {
+            "CodexSoft\\Shortcut\\Stringy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": ["vendor/", "tests/unit/"]
+        }
+    }
+}
